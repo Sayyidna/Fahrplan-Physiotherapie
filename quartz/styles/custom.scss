@@ -1,3 +1,126 @@
 @use "./base.scss";
 
 // put your custom CSS here!
+
+a.internal {
+  color: #b5b5b5;
+  text-decoration: none;
+}
+
+a.internal:hover {
+  color: #d0d0d0;
+  text-decoration: underline;
+}
+
+a.external {
+  color: #b5b5b5;
+}
+
+/* =========================
+   Ruhigere Sidebar / Explorer
+   ========================= */
+
+/* gesamte linke Spalte etwas ruhiger */
+.left.sidebar {
+  font-size: 0.95rem;
+}
+
+/* Seitentitel links oben */
+.page-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #d8d8d8;
+  margin-bottom: 0.8rem;
+}
+
+/* Suchfeld dezenter */
+.search > button,
+.search input {
+  background-color: transparent;
+  border: 1px solid #2f2f2f;
+  color: #bdbdbd;
+  box-shadow: none;
+}
+
+.search input::placeholder {
+  color: #7f7f7f;
+}
+
+/* Explorer-Überschrift */
+.explorer-title,
+h2.explorer-title {
+  color: #c8c8c8;
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+/* allgemeine Linkoptik in der Sidebar */
+.explorer a,
+.explorer button {
+  color: #a9a9a9;
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+
+.explorer a:hover,
+.explorer button:hover {
+  color: #d6d6d6;
+}
+
+/* aktive Seite etwas heller, aber nicht knallig */
+.explorer .active,
+.explorer .active > a {
+  color: #e2e2e2 !important;
+  font-weight: 600;
+}
+
+/* tiefere Ebenen etwas matter */
+.explorer .depth-2,
+.explorer .depth-3,
+.explorer .depth-4,
+.explorer .depth-5,
+.explorer .depth-6 {
+  opacity: 0.88;
+}
+
+/* etwas mehr Luft zwischen Punkten */
+.explorer li {
+  margin: 0.16rem 0;
+}
+
+/* Ordner-/Dateinamen etwas kompakter */
+.explorer .folder-title,
+.explorer .leaf-content,
+.explorer .node-content {
+  line-height: 1.35;
+}
+
+/* Einrückung etwas sauberer */
+.explorer ul {
+  padding-left: 0.85rem;
+}
+
+/* Trennlinien und harte visuelle Elemente abschwächen */
+.left.sidebar,
+.explorer,
+.search {
+  border-color: #262626;
+}
+
+/* Scrollbar in der Sidebar dezenter */
+.left.sidebar ::-webkit-scrollbar,
+.explorer ::-webkit-scrollbar {
+  width: 8px;
+}
+
+.left.sidebar ::-webkit-scrollbar-thumb,
+.explorer ::-webkit-scrollbar-thumb {
+  background: #2c2c2c;
+  border-radius: 8px;
+}
+
+.left.sidebar ::-webkit-scrollbar-track,
+.explorer ::-webkit-scrollbar-track {
+  background: transparent;
+}

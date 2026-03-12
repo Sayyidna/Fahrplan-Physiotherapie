@@ -1,0 +1,176 @@
+# Schmerz Definition
+International Association For The Study Of Pain (IASP):
+„Eine unangenehme sensorische und emotionale Erfahrung, die mit tatsächlichem oder potenziellem Gewebeschaden verbunden ist oder dieser ähnelt."
+
+- Schmerz ist immer eine persönliche Erfahrung, die in unterschiedlichem Maße von biologischen, psychologischen und sozialen Faktoren beeinflusst wird.
+- Schmerz und Nozizeption sind verschiedene Phänomene. Schmerz kann nicht allein aus der Aktivität sensorischer Neuronen abgeleitet werden.
+- Durch ihre Lebenserfahrungen lernen Individuen das Konzept von Schmerz.
+- Der Bericht einer Person über eine Schmerzerfahrung sollte respektiert werden.
+- Obwohl Schmerz normalerweise eine adaptive Funktion hat, kann er sich negativ auf die Funktion und das soziale sowie psychologische Wohlbefinden auswirken.
+- Die verbale Beschreibung ist nur eine von mehreren Verhaltensweisen, um Schmerz auszudrücken; die Unfähigkeit zu kommunizieren schließt nicht aus, dass ein Mensch oder ein nicht-menschliches Tier Schmerzen empfindet.“
+
+Schmerzwahrnehmung geht über die rein strukturelle Komponente hinaus und wird stark durch psychosoziale Kontextfaktoren moduliert. Für die Therapie ist es entscheidend, wie der Patient über seinen Zustand denkt und was er fühlt! (Ethik, Positivismus, Mündigkeit, Selbstwirksamkeit, Placebo/Nocebo)
+## adaptiver Schmerz
+
+- Schmerz ist proportional zum Ausmaß der Schädigung
+- Abnahme des Schmerzes im Heilungsverlauf
+## maladaptiver Schmerz
+
+- Diskrepanz zwischen Schmerz und Schädigung
+- Schmerz persistiert oder chronifiziert
+# Mature Organism Model (MOM)
+- Schmerz ist Teil der Stressbiologie und eine Wahrnehmungskomponente bei der Stressreaktion
+- Ziel ist eine Verhaltensänderung zur Gewährleistung von Heilung und dem Überleben
+- Schmerz wird nicht bewusst, wenn es dem Überleben im Weg steht
+- das ZNS ist das Koordinations-/Analysezentrum, das stehts Proben aus der Umwelt, dem Gewebe und sich selbst (Erfahrungen/Gefühle) zieht, um Schmerz entsprechend zu modulieren
+- „reif“ meint hier den Erfahrungsschatz und die Fülle an Erinnerungen auf die das Gehirn zur Beurteilung des Schmerzes zurückgreift (im Gegensatz zum unreifen, kindlichen Organismus)
+- im Zuge der Reifung eines perfekt adaptierten Organismus werden nur Abläufe und Erfahrungen gespeichert, die wichtig und nützlich für das Überleben sind
+- nicht selten kommt es jedoch zur Maladaption (möglicherweise v.a. auch in unserer [[0 Fahrplan/0.3 Grundlagen/0.3.3 Das menschliche System/index#Evolutionäre Diskrepanz|modernen Welt]])
+# 3 Dimensionen des Schmerzes
+- **sensibel** : Lokalisation, Qualität, Intensität, Art, Verlauf
+- **kognitiv** : Einordnung, Bewertung, Erklärung, Bedeutung
+- **affektiv** : emotionale Belastung, Bedrohung
+
+Therapeutisch kann Schmerz in allen Dimensionen beeinflusst werden!
+
+Beteiligte Systeme:
+- ZNS
+- Vegetativum
+- Nozizeption
+- neuroendokrines System
+- somatomotorisches System
+- Immunsystem
+# Strukturelle Degeneration und Schmerz
+- viele Menschen mit degeneriertem Gewebe und Gewebepathologien sind rundum gesund oder haben nur geringe Schmerzen
+- Degeneration kann auch als adaptiver Vorgang betrachtet werden und ist spätestens ab einem gewissen Alter physiologisch
+
+Asymptomatische Patienten mit Auffälligkeiten im MRT der LWS (Literatur)
+
+|   |   |   |   |   |   |   |   |
+|---|---|---|---|---|---|---|---|
+|Patientenalter|20|30|40|50|60|70|80|
+|BS Degeneration|37 %|52 %|68 %|80 %|88 %|93 %|96 %|
+|BS Signalverlust|17 %|33 %|54 %|73 %|86 %|94 %|97 %|
+|BS Höhenminderung|24 %|34 %|45 %|56 %|67 %|76 %|84 %|
+|BS Protrusion|29 %|31 %|33 %|36 %|38 %|40 %|43 %|
+|Annuläre Fissuren|19 %|20 %|22 %|23 %|25 %|27 %|29 %|
+|Facettdegeneration|4 %|9 %|18 %|32 %|50 %|69 %|83 %|
+
+- es besteht nicht zwangsläufig eine Korrelation zwischen Degeneration/struktureller Veränderung und Schmerz! Es kommt vielmehr auf die Belastungsrelation an.
+
+## VOMIT - Victim Of Medical Imaging Technology
+# Schmerz und Heilung
+- Schmerz ist ein physiologischer und adaptiver Bestandteil von Heilung und muss im Heilungsverlauf beurteilt werden
+- Art und Intensität verlaufen proportional zu den Heilungsphasen
+	- Entzündungsphase: sekundärer Schmerz (Ruheschmerz)
+	- Proliferationsphase: kein sekundärer Schmerz mehr; noch Belastungsschmerz
+	- Umbauphase: kein Schmerz mehr
+- Heilungsverläufe können sich verzögern oder gestört sein (s.Big Five gestörter Heilung)
+- möglich ist aber auch überschießende Gewebesensibilität als maladaptiver Zustand
+	- z.B. durch inadäquate Belastung (Über-/Unterlastung) im Zuge der Heilung
+	- in diesem Fall braucht der Patient Aufklärung, dass der Schmerz kein Hinweis auf eine Schädigung ist
+	- Training mit angepasster Belastung desensibilisiert
+# Schmerzarten
+## Nozisensorischer Schmerz
+- Wahrnehmung, Weiterleitung und Verarbeitung noxischer Reize
+	- mechanisch / thermisch / chemisch
+- klarer Mechanismus im Gewebe
+- Erregung spezialisierter Nozizeptoren (IIIb- und IV-Fasern) mit hoher Reizschwelle
+- Nozizeptorenaktivität bei überschwelligem Reiz und proportional zur einwirkenden Kraft
+- einige Nozizeptoren sind, gemeinsam mit anderen Faserarten (z.B. A-β-, bzw II-Fasern) dauerhaft aktiv und erzeugen einen „Impulsteppich“. In entzündetem Gewebe nimmt die Aktivität in Ruhe und bei Bewegung stark zu
+- einige Verletzungen schmerzen erst verzögert (am nächsten Tag) und nach Abklingen des ersten Schmerzes aufgrund:
+	- der metabolen Schwerfälligkeit der sich entwickelnden Entzündungsreaktion
+	- der Aktivierung der „schlafender“ nozisensorischer Fasern über Stunden hinweg („silent fibers“, polymodale IV-Fasern)
+	- enstehendem Gewebedruck und Hyperalgesie
+### Afferente Fasertypen
+ _nach Lloyd und Hunt / Erlanger und Gasser_
+
+Die Myeliniserung und damit die Leitungsgeschwindigkeit der Fasern nimmt von I nach IV ab.
+
+- Ia / Aα Muskelspindeln
+- Ib / Aα Sehnenspindeln
+- II / Aβ kutane Mechanosensorik (Berührung, Druck, Vibration), Gelenkkapsel
+- IIIa / Aδ Druck in der Tiefe, Temperatur
+- **IIIb / Aδ** Mechanorezeptoren, Nozizeptoren - primärer Schmerz
+- **IV / C** Nozizeption - sekundärer Schmerz
+#### IIIb Fasern
+- hochschwellige Mechano-/Thermo-/Nozisensoren
+- schnelle Wahrnehmung, schnelle Adaption
+- scharfer, stechender, gut lokalisierbarer Schmerz
+#### IV Fasern
+- unmyelinisiert mit hoher Reizschwelle für mechanische, thermische, chemische Reize
+	- 20% unimodal
+		- dumpfer, bohrender, schlecht lokalisierbarer Schmerz
+		- langsame Adaption
+- 80% polymodal ; „Silent Fibers“
+		- diffuse, brennende, bohrende Schmerzen, ohne Information über Lokalisation, Ort und Größe des Schadens
+		- keine Adaption
+### Nozisensorische Dichte 
+nimmt zu
+- von tief nach oberflächlich
+- von proximal nach distal
+### Nozisensorische Verschaltung
+#### Konvergenz und dendritische Streuung
+### neurogene Entzündung
+- ensteht als Reaktion auf eine Gewebsschädigung und zusätzliche nichtneurogene Komponenten:
+	- Eindämmung des Schadens durch Koagulation und Erstellung eines Fibringitters
+	- Aktivierung von Immunzellen zur Phagozytose und Abwehr eingedrungener Erreger
+	- Ödematisierung (Plasmaextravasion)
+	- Freisetzung von Entzündungsmediatoren aus verletzten Zellen
+#### Entzündungsmediatoren
+werden bei Verletzung an freien Nervenenden von IIIb-Fasern und an  freigesetzt
+- Substance P, Prostaglandin, Histamin, Bradikinin, …
+- der Vorgang der Entzündung und seine Mediation ist extrem komplex. Der Vorgang wird hier stark vereinfacht dargestellt
+- weitere Substance P wird im spinalen Ganglion produziert
+- Substance P breitet sich im Axon antidrom durch den Axonreflex aus, ausgelöst durch Reizung der polymodalen IV-Fasern
+	- Herabsetzung der Reizschwelle (Hyperalgesie)
+	- lokale Vasodilatation
+#### Entzündungszeichen
+- Rubor - Rötung
+- Calor - Überwärmung
+- Tumor - Schwellung
+- Dolor - Schmerz
+- Functio laesa - Funktionseinschränkung
+#### primärer Schmerz
+- durch Reizung von IIIb-Fasern ensteht im Moment der Gewebsschädigung ein scharfer, stechender, schnell adaptierender Schmerz. Reflexauslösend, zb Flexoren des Armes beim berühren einer heißen Herdplatte.
+#### primäre Hyperalgesie
+- 1. Phase: Reaktion im Gewebe durch Ausschüttung der in den Vesikeln der Nervenenden vorrätigen Entzündungsmediatoren. Die Reizschwelle wird herabgesetz und Gefäße dilatieren
+- 2. Phase: Entzündungsmediatoren werden im spinalen Ganglion produziert und durch den Axonreflex antidrom über das Axon angeliefert und ausgeschüttet
+#### sekundärer Schmerz
+- durch Reizung der IV-Fasern tritt verzögert nach dem Gewebeschaden ein langsam adaptierender, dumpfer, bohrender, schlecht lokalisierbarer Schmerz auf.
+- Druck im Gewebe durch Schwellung und Hyperalgesie erzeugt Reizung
+- Entzündungsmediatoren reizen die IV-Fasern
+#### sekundäre Hyperalgie
+- im Spinalganglion neu produzierte Entzündungsmediatoren werden zur Peripherie (80%) sowie zum Hinterhorn des neuroanatomischen Segments (20%)  transportiert und ausgeschüttet
+- lässt die Entzündungsreaktion nicht nach und es werden über einen längeren Zeitraum Entzündungsmediatoren ausgeschüttet, kommt es über das Hinterhorn zur Herabsetzung der Reizschwelle der Nozizeptoren im gesamten neuroanatomischen Segment
+### Lokaler Schmerz
+- [[0 Fahrplan/0.3 Grundlagen/0.3.4 Anatomie ; Physiologie/0.3.4.5 Schmerz/index#Definition|Schmerzwahrnehmung]] am Ort der Schmerzquelle
+- [[0 Fahrplan/0.3 Grundlagen/0.3.4 Anatomie ; Physiologie/0.3.4.5 Schmerz/index#primärer Schmerz|primärer]] und [[0 Fahrplan/0.3 Grundlagen/0.3.4 Anatomie ; Physiologie/0.3.4.5 Schmerz/index#sekundärer Schmerz|sekundärer]] Schmerz
+### Ausstrahlender Schmerz / Referred Pain
+- [[0 Fahrplan/0.3 Grundlagen/0.3.4 Anatomie ; Physiologie/0.3.4.5 Schmerz/index#Definition|Schmerzwahrnehmung]] nicht am Ort der Schmerzquelle
+- die Schmerzquelle liegt in einer [[0.3.4.1.1 Bindegewebe#Bindegewebsarten|bindegewebigen Struktur]]
+- je höher die [[0 Fahrplan/0.3 Grundlagen/0.3.4 Anatomie ; Physiologie/0.3.4.5 Schmerz/index#Nozisensorische Dichte|nozisensorische Innervationsdichte]], desto unwahrscheinlicher ist RP
+- tritt auf in Folge von Interpretations-/Lokalisationsfehlern des ZNS, aufgrund von Konvergenz und dendritischer Streuuung
+- Regeln der Schmerzausstrahlung
+	- von proximal nach distal / von tief nach oberflächig
+	- von Orten mit niedriger nozisensorischer Dichte zu Orten mit höherer
+	- bleibt im [[0 Fahrplan/0.3 Grundlagen/0.3.4 Anatomie ; Physiologie/0.3.4.2 neuroanatomische Segmente/index|Segment]] / kreuzt nie die Medianlinie
+	- überspringt nie eine Struktur
+	- verläuft so, wie die Struktur, in der die Schmerzquelle liegt, nozisensorisch innerviert wird
+		- monosegmental oder multisegmental / unilateral oder bilateral
+- das Ausmaß des Ausstrahlungsgebietes (Referred Area) ist abhängig von:
+	- der Größe des Schadens
+	- der momentanen Belastbarkeit
+	- der Selektivität des Patienten (s.Arousal)
+	- einer eventuellen segmentalen Dysregulation
+### Ischämischer Schmerz
+- Ischämie entsteht bei nicht-Bewegung, anhaltendem Druck auf ein Gewebe oder Durchblutungsproblematik
+- führt zu veränderter chemischer Zusammensetzung im Gewebe
+- erzeugt nozisensorische Reizung, erhöhte nozisensorische Erregbarkeit mit Unwohlsein und steigendem Verlangen nach Bewegung
+## Neuropathischer Schmerz
+- die Schmerzquelle liegt in einer neurogenen Struktur
+- massiv einschießender Schmerz im gesamten Nervenverlauf von der Quelle nach distal (Vergleich mit Anstoßen am N. ulnaris)
+- durch Entzündung oder Druck, ausgelöst durch starken Reiz oder schwächeren Reiz bei herabgesetzter Reizschwelle
+- adaptiert nicht
+## Noziplastischer Schmerz
+

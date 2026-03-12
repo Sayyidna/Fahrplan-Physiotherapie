@@ -1,0 +1,101 @@
+# Heilung
+
+## Homöostase
+## Allostase
+
+
+## Stadien des Gesundheitsproblems
+akut
+subakut
+chronisch
+rezidivierend
+## Heilungsphasen
+- die beschriebenen Phasen beschreiben die bindegewebige Heilung! Muskulatur und Nervengewebe verheilen anders.
+### Entzündungsphase
+- bis 1 Woche
+- **vaskuläre Reaktion** (5-15 Minuten)
+	- reflektorische Vasokonstriktion und Blutgerinnung
+- **zelluläre Reaktion** (1-5 Tage)
+	- Erhöhung der Permeabilität der Gefäße, Vasodilatation, Chemotaxis von Entzündungszellen und Immunzellen (Makrophagen, Leukozyten, Lymphozyten), Entstehung der Entzündungszeichen
+	- Phagozytose durch Makrophagen verursacht große Veränderungen im Verletzungsgebiet, was zur Abnahme der Stabilität im Gewebe führt
+	- Synthese von Typ III Kollagen (retikuläre Fasern) als Vorstufe und zur bindegewebigen Verschließung der Wunde
+- **Belastbarkeit und Schmerz**
+	- Stabilität wird erzeugt durch interzelluläre Verbindungen zwischen Myofibroblasten und Typ III Kollagen -> sehr geringe Belastbarkeit
+	- sekundärer Schmerz = Entzündungsphase
+	- nächtliches Aufflammen durch abfallenden Kortisol-Spiegel
+	- bewegungsstabil
+- **Baustellen-Metapher**
+	- ein Baum ist in ein Haus gestürzt (Trauma). Die Baustelle wird vorbereitet, abgesteckt, Zufahrtswege angelegt. Der Schutt wird abtransportiert und das Haus durch eine Sicherheitsfirma abgesichert.
+### Proliferationsphase 
+- bis 3 Wochen
+- **Proliferation** (3-10 Tage)
+	- abnehmende Zahl an Immunzellen - Entzündung klingt ab
+- **Kontraktionsphase** (3-10 Tage)
+	- Einwanderung von Myofibroblasten, die sowohl aneinander als auch an die Wundränder binden und diese zusammenziehen (Wundkontraktion)
+- **Produktion** (4 Tage - 4 Wochen)
+	- ausgeprägte Kollagensynthese (Typ III) und Granulationsgewebe - Organisationsgrad und Ausrichtung des heranwachsenden Gewebes ist abhängig von physiologischen Belastungsreizen
+- **Belastbarkeit und Schmerz**
+	- Gewebe ist noch wenig elastisch und gering belastbar
+	- kein sekundärer Schmerz mehr = Ende Entzündungsphase
+	- Hyperalgesie als Ausdruck geringer Belastbarkeit
+	- belastungsstabil
+- **Baustellen-Metapher**
+	- Baumaterial wird angeliefert und das Haus in ein Baugerüst gehüllt.
+### Remodulationsphase
+- bis 9-12 Wochen ; auch Konsolidierungsphase oder Organisationsphase genannt
+	- Umbau von Typ III in Typ I Kollagen
+	- Fibroblastenaktivität nimmt zu, Grundsubstanz (Proteoglykane, Glykosaminoglykane) wird produziert und Myofibroblasten nehmen ab -> deutliche Erhöhung der Elastizität und Belastbarkeit
+	- Kollagenfaserdicke nimmt durch Wasserbindung zu
+	- Faserausrichtung, Ausrichtung physiologischer Crosslinks
+	- trainingsstabil
+- **Belastbarkeit und Schmerz**
+	- keine Hyperalgesie mehr = Ende Proliferation
+	- in kontrollierter Umgebung gut belastbar, aber nicht gegenüber Belastungsspitzen
+### Integrationsphase
+- bis 1 Jahr
+	- Einsprießen peripherer Nerven in das neue Gewebe und neuronale Integration
+	- starke Kollagensynthese und Umbau Typ III zu Typ I Kollagen bis ca 16 Woche, dann langsame Abnahme der Fibroblastenaktivität. Bis zur ca. 20. Woche sind ca. 85% des Umbaus erfolgt
+	- sportstabil
+- **Belastbarkeit**
+	- sportspezifisch, aphysiologisch in unkontrollierten Situationen belastbar, auch gegenüber Belastungsspitzen
+## Formen struktureller Wiederherstellung
+- in Abhängigkeit der Adaptivität des Gewebes
+### Regeneration
+- Schaden auf Matrix-Niveau, Reaktion auf Produktschädigung, Umgang mit physiologischer Schädigung/Gebrauchsschädigung
+- keine Mitose notwendig
+- kurzfristige Wiederherstellung; turn-over-rate der Matrix ca 1 Woche
+### Reparation
+- Schaden auf Zell-Niveau ; Reaktion auf Zelltod inklusive Produktwiederherstellung
+- Zellneubildung durch Mitose
+- turn-over-rate von Kollagen ca 1 Jahr
+### Restauration
+- minderwertige Wiederherstellung ; Reaktion auf eine Schädigung, bei der eine Regeneration nicht stattfinden kann
+- Ausmaß des Schadens oder mangelndes adaptives Vermögen
+- Ersetzung des Gewebes durch qualitativ minderwertiges Gewebe (z.B. Calcifikation)
+## Funktionelle Wiederherstellung
+Die Zellen des kollagenen Bindegewebes können sich bei Zelluntergang und optimalen Bedingungen regenerieren. 
+Die Qualität der extrazellulären Matrix hängt von der funktionellen Belastung ab, erreicht jedoch nie 100%. Funktionell ist jedoch oft nicht zu bemerken, dass sich das Gewebe nicht vollständig regeneriert hat (intrinsische Kompensation). Ob es sich bei der Wiederherstellung eher um Regeneration (Ersatz durch qualitativ gleichwertiges Gewebes) oder um Reparation (Ersatz durch minderwertiges Gewebe) handelt, ist von untergeordneter Bedeutung, solange eine funktionelle Wiederherstellung erfolgt.
+## Wiederherstellungshindernisse
+nicht angepasstes Haltungs-/Bewegungsverhalten
+mechanische Obstruktion
+Systemerkrankung
+vegetative Dysregulation
+Disposition
+
+# Immunreaktion
+1. Makrophagen patrouillieren, erkennen sie Antigene, werden diese entweder phagozytiert, oder die Info wird weitergegeben
+2. Botenstoffe (Zytokine - entweder Interleukine oder Tumor-Nekrose-Faktoren) bringen die Info zu T-Lymphozyten. Die schicken den Boten entweder zurück (nicht gefährlich) oder weiter zu B-Lymphozyten
+3. B-Lymphozyten produzieren durch die mitgebrachte Probe des Botenstoffes Antikörper und stempeln/markieren das Antigen. Die ausschwärmenden B-Lymphozyten bringen Immunglobuli-G sowie Interleukine 1 und 6 mit, die Entzündungsreaktionen katalysieren
+4. Interleukine 4, 10 und 13 bringen die Entzündung wieder runter
+- Die Entzündungsreaktion ist abhängig von der Anzahl vorhandener Prostaglandine.
+	- Prostaglandin 1: Cyklooxigenase 1 und Dihomogammalinolensäure
+	- Prostaglandin 3: versch. Cyklooxigenasen und Eicosapaentensäure
+		- hemmen Entzündung / fördern Gerinnung
+		- Omega-3-Fettsäuren
+	- Prostaglandin 2: Cyklooxigenase 2 und Arachnidonsäure
+		- fördert Entzündung / hemmt Gerinnung
+		- Omega-6-Fettsäuren
+- Medikamente: NSARs und Cox2-Hemmer zerstören den Vorrat an Cyklooxigenase
+- Kortison: zerstört Cyklooxigenase und alle schon fertigen Prostaglandine
+# Literatur
+- Frans van den Berg: _Angewandte Physiologie: 1 Das Bindegewebe des Bewegungsapparates verstehen und beeinflussen._ Thieme, Stuttgart 2016

@@ -2,14 +2,17 @@
 
 // put your custom CSS here!
 
-a.internal {
-  color: #b5b5b5;
-  text-decoration: none;
+.internal-link {
+  color: #9a9a9a !important;
+  background: none !important;
+  padding: 0 !important;
+  border-radius: 0 !important;
+  text-decoration: none !important;
 }
 
-a.internal:hover {
-  color: #d0d0d0;
-  text-decoration: underline;
+.internal-link:hover {
+  text-decoration: underline !important;
+  color: #b5b5b5 !important;
 }
 
 a.external {
@@ -23,6 +26,16 @@ a.external {
 /* gesamte linke Spalte etwas ruhiger */
 .left.sidebar {
   font-size: 0.95rem;
+}
+
+.sidebar {
+  padding-left: 14px !important;
+  padding-right: 10px !important;
+  width: 240px !important;
+}
+
+.folder-container {
+  gap: 2px !important;
 }
 
 /* Seitentitel links oben */
@@ -123,4 +136,33 @@ h2.explorer-title {
 .left.sidebar ::-webkit-scrollbar-track,
 .explorer ::-webkit-scrollbar-track {
   background: transparent;
+}
+
+.toc-title {
+  display: none !important;
+}
+
+.toc {
+  padding: 6px 8px !important;
+  width: 220px !important;
+}
+
+.folder-title {
+  color: #bdbdbd !important;
+}
+
+.folder-title:hover {
+  color: #ffffff !important;
+}
+
+.folder-title.active {
+  color: #ffffff !important;
+}
+
+.page-title {
+  color: #8b2b2b !important;
+}
+
+.page {
+  max-width: 820px !important;
 }

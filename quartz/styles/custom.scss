@@ -1,90 +1,287 @@
 @use "./base.scss";
 
-/* =========================
-   Allgemeine Links im Fließtext
-   ========================= */
+/* ========================================
+   FAHRPLAN PHYSIOTHERAPIE – QUARTZ 4 THEME
+   ======================================== */
 
-.internal-link {
-  color: #9a9a9a !important;
-  background: transparent !important;
-  padding: 0 !important;
-  border-radius: 0 !important;
-  text-decoration: none !important;
-  box-shadow: none !important;
+:root {
+  --accent: #a73333;
+  --accent-hover: #bc4040;
+
+  --text-main: #d8d8d8;
+  --text-soft: #a8a8a8;
+  --text-muted: #878787;
+
+  --bg-main: #0f1014;
+  --bg-panel: #12141a;
+  --border-soft: rgba(255, 255, 255, 0.08);
+
+  --content-width: 820px;
+  --content-offset-left: 4.8rem;
+
+  --sidebar-left-width: 300px;
+  --sidebar-right-width: 260px;
+
+  --sidebar-font-size: 0.88rem;
+  --sidebar-line-height: 1.32;
+  --sidebar-letter-spacing: 0.003em;
+
+  --body-font:
+    -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", "Helvetica Neue",
+    Arial, sans-serif;
 }
 
-.internal-link:hover {
-  color: #b5b5b5 !important;
-  text-decoration: underline !important;
+/* ========================================
+   GLOBAL
+   ======================================== */
+
+html,
+body {
+  background: var(--bg-main);
+  color: var(--text-main);
+  font-family: var(--body-font);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
 
-a.external {
-  color: #b5b5b5 !important;
+body {
+  line-height: 1.65;
+  font-size: 16px;
 }
 
-/* =========================
-   Gesamtlayout
-   ========================= */
-
-/* Gesamte Seite nicht künstlich verengen */
 .page {
   max-width: none !important;
 }
 
-/* Mittelspalte darf breiter sein */
 .center {
-  max-width: 980px !important;
+  max-width: 1320px !important;
+  min-width: 0;
 }
 
-/* Eigentliche Inhaltsbreite */
-article {
-  max-width: 760px !important;
+/* ========================================
+   CONTENT-LAYOUT
+   ======================================== */
+
+/* Gemeinsame horizontale Achse für Breadcrumb, Titel, Meta und Content */
+.center .breadcrumb,
+.center nav.breadcrumb-container,
+.center .page-header,
+.center .content-meta,
+.center .page-meta,
+.center article,
+.center article > h1 {
+  margin-left: var(--content-offset-left) !important;
+  max-width: var(--content-width) !important;
 }
 
-/* =========================
-   Linke Sidebar
-   ========================= */
-
-.left.sidebar {
-  width: 250px !important;
-  padding-left: 12px !important;
-  padding-right: 8px !important;
-  font-size: 0.95rem;
+/* eigentlicher Leseblock */
+article,
+main article,
+.page article {
+  max-width: var(--content-width) !important;
+  margin-right: auto !important;
+  color: var(--text-main);
 }
 
-/* Titel links oben */
-.page-title {
-  font-size: 1.8rem;
-  font-weight: 700;
-  color: #8b2b2b !important;
-  margin-bottom: 0.8rem;
-  line-height: 1.1;
+/* Fließtext */
+article p,
+article li,
+article td,
+article blockquote,
+article span,
+article strong,
+article em {
+  color: var(--text-main);
+}
+
+/* Überschriften */
+article h1,
+article h2,
+article h3,
+article h4,
+article h5,
+article h6 {
+  color: #ececec !important;
+  letter-spacing: -0.012em;
+  line-height: 1.22;
+}
+
+article h1 {
+  font-weight: 680;
+}
+
+article h2 {
+  font-weight: 640;
+}
+
+article h3,
+article h4,
+article h5,
+article h6 {
+  font-weight: 600;
+}
+
+/* Meta */
+.content-meta,
+.page-meta,
+article .meta {
+  color: var(--text-muted) !important;
+}
+
+/* ========================================
+   LINKS – GLOBAL
+   ======================================== */
+
+a {
+  color: var(--text-soft);
+  text-decoration: none;
+  transition:
+    color 140ms ease,
+    text-decoration-color 140ms ease,
+    opacity 140ms ease;
+}
+
+a:hover {
+  color: #d0d0d0;
+}
+
+/* Interne Links im Fließtext */
+article a.internal,
+article a.internal-link,
+article .internal-link,
+article .tag-link,
+article a[data-slug] {
+  color: #a9a9a9 !important;
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  outline: none !important;
+  padding: 0 !important;
+  border-radius: 0 !important;
+  text-decoration: none !important;
+}
+
+article a.internal:hover,
+article a.internal-link:hover,
+article .internal-link:hover,
+article .tag-link:hover,
+article a[data-slug]:hover {
+  color: #c7c7c7 !important;
+  text-decoration: underline !important;
+  text-underline-offset: 0.11em;
+}
+
+/* ========================================
+   TITEL LINKS OBEN
+   DOM: h2.page-title > a
+   ======================================== */
+
+h2.page-title,
+h2.page-title a,
+.page-title,
+.page-title a {
+  color: var(--accent) !important;
+  text-decoration: none !important;
+  font-weight: 700 !important;
+  letter-spacing: -0.015em !important;
+  line-height: 1.05 !important;
+}
+
+h2.page-title a:hover,
+.page-title a:hover {
+  color: var(--accent-hover) !important;
+  text-decoration: none !important;
+}
+
+/* ========================================
+   BREADCRUMB
+   ======================================== */
+
+.breadcrumb,
+.breadcrumb a,
+.breadcrumb span,
+.breadcrumb p,
+.breadcrumb li,
+.breadcrumb svg,
+.breadcrumb svg *,
+nav.breadcrumb-container,
+nav.breadcrumb-container a,
+nav.breadcrumb-container span,
+nav.breadcrumb-container p,
+nav.breadcrumb-container li,
+nav.breadcrumb-container svg,
+nav.breadcrumb-container svg * {
+  color: var(--accent) !important;
+  fill: var(--accent) !important;
+  stroke: var(--accent) !important;
+  text-decoration: none !important;
+}
+
+.breadcrumb a:hover,
+nav.breadcrumb-container a:hover {
+  color: var(--accent-hover) !important;
+  text-decoration: underline !important;
+  text-underline-offset: 0.12em;
+}
+
+.breadcrumb ol,
+.breadcrumb ul,
+nav.breadcrumb-container ol,
+nav.breadcrumb-container ul {
+  color: var(--accent) !important;
+}
+
+/* ========================================
+   LINKE SIDEBAR
+   ======================================== */
+
+.left.sidebar,
+div.left.sidebar {
+  width: var(--sidebar-left-width) !important;
+  min-width: var(--sidebar-left-width) !important;
+  height: 100vh !important;
+  padding-left: 18px !important;
+  padding-right: 14px !important;
+  overflow: hidden !important;
+
+  font-size: var(--sidebar-font-size) !important;
+  line-height: var(--sidebar-line-height) !important;
+  letter-spacing: var(--sidebar-letter-spacing) !important;
+}
+
+/* innere Wrapper nicht scrollen lassen */
+.left.sidebar .sidebar-content,
+.left.sidebar .sidebar,
+.left.sidebar .explorer {
+  overflow: hidden !important;
 }
 
 /* Suchfeld */
 .search > button,
 .search input {
-  background-color: transparent;
-  border: 1px solid #2f2f2f;
-  color: #bdbdbd;
-  box-shadow: none;
+  background: transparent !important;
+  border: 1px solid #2c2f36 !important;
+  color: #bdbdbd !important;
+  box-shadow: none !important;
 }
 
 .search input::placeholder {
-  color: #7f7f7f;
+  color: #7f7f7f !important;
 }
 
-/* Explorer */
-.explorer {
-  padding-right: 0 !important;
-}
-
+/* Explorer-Titel */
 .explorer-title,
 h2.explorer-title {
-  color: #c8c8c8;
-  font-size: 0.95rem;
-  font-weight: 600;
-  letter-spacing: 0.01em;
+  color: var(--text-main) !important;
+  font-weight: 600 !important;
+  letter-spacing: 0 !important;
+}
+
+/* Explorer-Grundstil */
+.explorer,
+.explorer * {
+  font-size: inherit;
+  line-height: inherit;
 }
 
 .explorer a,
@@ -92,9 +289,11 @@ h2.explorer-title {
 .explorer .folder-title,
 .explorer .leaf-content,
 .explorer .node-content {
-  color: #a9a9a9 !important;
+  color: var(--text-soft) !important;
+  background: transparent !important;
   text-decoration: none !important;
-  transition: color 0.15s ease;
+  font-weight: 390 !important;
+  letter-spacing: 0.002em !important;
 }
 
 .explorer a:hover,
@@ -102,125 +301,224 @@ h2.explorer-title {
 .explorer .folder-title:hover,
 .explorer .leaf-content:hover,
 .explorer .node-content:hover {
-  color: #d6d6d6 !important;
+  color: #dddddd !important;
+  text-decoration: none !important;
 }
 
-.explorer .active,
-.explorer .active > a,
-.explorer .active .leaf-content,
-.explorer .active .node-content {
-  color: #e2e2e2 !important;
-  font-weight: 600;
+/* Aktive Datei */
+.explorer a.active,
+.explorer-content a.active,
+.explorer li > a.active,
+.explorer ul li > a.active,
+.explorer [aria-current="page"] {
+  color: var(--accent) !important;
+  font-weight: 560 !important;
+}
+
+/* Geöffnete Ordner */
+.explorer .folder-outer.open > .folder-container,
+.explorer .folder-outer.open > .folder-container *,
+.explorer .folder-outer.open > .folder-title,
+.explorer .folder-outer.open > div > a {
+  color: #d2d2d2 !important;
+}
+
+/* Einrückung und Dichte */
+.explorer ul {
+  padding-left: 0.72rem !important;
 }
 
 .explorer li {
-  margin: 0.14rem 0;
+  margin: 0.08rem 0 !important;
 }
 
-.explorer .folder-title,
-.explorer .leaf-content,
-.explorer .node-content {
-  line-height: 1.3;
+/* Nur Explorer-Inhalt scrollt */
+.explorer-content {
+  overflow-y: auto !important;
+  overflow-x: hidden !important;
+  max-height: calc(100vh - 220px) !important;
+  scrollbar-width: none !important;
 }
 
-.explorer ul {
-  padding-left: 0.7rem !important;
-}
-
-.left.sidebar,
-.explorer,
-.search {
-  border-color: #262626;
-}
-
-/* dezente Scrollbar links */
-.left.sidebar ::-webkit-scrollbar,
-.explorer ::-webkit-scrollbar {
-  width: 8px;
-}
-
-.left.sidebar ::-webkit-scrollbar-thumb,
-.explorer ::-webkit-scrollbar-thumb {
-  background: #2c2c2c;
-  border-radius: 8px;
-}
-
-.left.sidebar ::-webkit-scrollbar-track,
-.explorer ::-webkit-scrollbar-track {
-  background: transparent;
-}
-
-/* =========================
-   Rechte Sidebar / TOC
-   ========================= */
-
-.right.sidebar {
-  width: 220px !important;
-  padding-left: 6px !important;
-  padding-right: 4px !important;
-}
-
-/* TOC-Überschrift ausblenden */
-.right.sidebar h2,
-.right.sidebar .toc-header,
-.right.sidebar .toc-title {
+.explorer-content::-webkit-scrollbar {
+  width: 0 !important;
+  height: 0 !important;
   display: none !important;
 }
 
-/* TOC kompakter */
-.toc {
-  padding: 0 !important;
-  margin: 0 !important;
+.explorer-content .overflow,
+.explorer-content > ul {
+  overflow-y: visible !important;
+  overflow-x: visible !important;
 }
 
-/* Alle Links rechts neutral statt blau */
-.right.sidebar a,
-.right.sidebar .internal-link,
-.right.sidebar .folder-title,
-.right.sidebar .tag-link {
-  color: #a9a9a9 !important;
+/* ========================================
+   RECHTE SIDEBAR / TOC
+   ======================================== */
+
+.right.sidebar,
+div.right.sidebar {
+  width: var(--sidebar-right-width) !important;
+  min-width: var(--sidebar-right-width) !important;
+  height: 100vh !important;
+  padding-left: 18px !important;
+  padding-right: 10px !important;
+  overflow: hidden !important;
+
+  font-size: var(--sidebar-font-size) !important;
+  line-height: var(--sidebar-line-height) !important;
+  letter-spacing: var(--sidebar-letter-spacing) !important;
+}
+
+/* TOC-Überschrift ausblenden */
+.right.sidebar .toc > button,
+.right.sidebar .toc button,
+.right.sidebar .toc .toc-header,
+.right.sidebar .toc .toc-title {
+  display: none !important;
+}
+
+/* TOC allgemein */
+.right.sidebar .toc,
+.right.sidebar .toc * {
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.right.sidebar .toc ul,
+.right.sidebar .toc li,
+.right.sidebar .toc a {
   background: transparent !important;
   text-decoration: none !important;
+  border: none !important;
+  box-shadow: none !important;
 }
 
-.right.sidebar a:hover,
-.right.sidebar .internal-link:hover,
-.right.sidebar .folder-title:hover,
-.right.sidebar .tag-link:hover {
-  color: #d6d6d6 !important;
+/* Fade / Mask / Overlay entfernen */
+.right.sidebar,
+.right.sidebar .toc,
+.right.sidebar .toc .overflow,
+.right.sidebar .toc ul {
+  mask-image: none !important;
+  -webkit-mask-image: none !important;
+  opacity: 1 !important;
+}
+
+.right.sidebar .toc::before,
+.right.sidebar .toc::after,
+.right.sidebar .toc .overflow::before,
+.right.sidebar .toc .overflow::after,
+.right.sidebar .toc ul::before,
+.right.sidebar .toc ul::after {
+  display: none !important;
+  content: none !important;
+}
+
+/* Alles im TOC zunächst neutral */
+.right.sidebar .toc li > a,
+.right.sidebar .toc .depth-1 > a,
+.right.sidebar .toc .depth-2 > a,
+.right.sidebar .toc .depth-3 > a,
+.right.sidebar .toc a {
+  color: var(--text-soft) !important;
+  font-weight: 390 !important;
+  letter-spacing: 0.002em !important;
+}
+
+/* Tiefen leicht differenzieren */
+.right.sidebar .toc li.depth-1 > a {
+  font-weight: 470 !important;
+}
+
+.right.sidebar .toc li.depth-2 > a,
+.right.sidebar .toc li.depth-3 > a {
+  font-weight: 390 !important;
+}
+
+/* Hover */
+.right.sidebar .toc a:hover {
+  color: #dddddd !important;
   text-decoration: underline !important;
+  text-underline-offset: 0.11em;
 }
 
-/* dezente Scrollbar rechts */
-.right.sidebar ::-webkit-scrollbar {
-  width: 8px;
+/* Nur echter aktiver Link rot */
+.right.sidebar .toc a.active,
+.right.sidebar .toc a.in-view {
+  color: var(--accent) !important;
+  font-weight: 560 !important;
 }
 
-.right.sidebar ::-webkit-scrollbar-thumb {
-  background: #2c2c2c;
-  border-radius: 8px;
+/* Eltern-/Containerzustände explizit neutralisieren */
+.right.sidebar .toc li.active > a:not(.active):not(.in-view),
+.right.sidebar .toc li.in-view > a:not(.active):not(.in-view),
+.right.sidebar .toc li.depth-1.active > a:not(.active):not(.in-view),
+.right.sidebar .toc li.depth-2.active > a:not(.active):not(.in-view),
+.right.sidebar .toc li.depth-3.active > a:not(.active):not(.in-view),
+.right.sidebar .toc li.depth-1 > a:not(.active):not(.in-view),
+.right.sidebar .toc li.depth-2 > a:not(.active):not(.in-view),
+.right.sidebar .toc li.depth-3 > a:not(.active):not(.in-view) {
+  color: var(--text-soft) !important;
 }
 
-.right.sidebar ::-webkit-scrollbar-track {
-  background: transparent;
+/* TOC Scrollbereich */
+.right.sidebar .toc .overflow,
+.right.sidebar .toc ul {
+  overflow-y: auto !important;
+  overflow-x: hidden !important;
+  max-height: calc(100vh - 220px) !important;
+  scrollbar-width: none !important;
 }
 
-/* =========================
-   Metadaten / Kleinteile
-   ========================= */
-
-.content-meta {
-  color: #8a8a8a !important;
+.right.sidebar .toc .overflow::-webkit-scrollbar,
+.right.sidebar .toc ul::-webkit-scrollbar,
+.right.sidebar::-webkit-scrollbar {
+  width: 0 !important;
+  height: 0 !important;
+  display: none !important;
 }
 
-/* Breadcrumbs etwas ruhiger */
-.breadcrumbs,
-.breadcrumbs a {
-  color: #8fa1b3 !important;
-  text-decoration: none !important;
+/* ========================================
+   FIREFOX SCROLLBARS AUSBLENDEN
+   ======================================== */
+
+.left.sidebar,
+.right.sidebar,
+.explorer-content,
+.right.sidebar .toc ul,
+.right.sidebar .toc .overflow {
+  scrollbar-width: none !important;
 }
 
-.breadcrumbs a:hover {
-  color: #b8c3cf !important;
-  text-decoration: underline !important;
+/* ========================================
+   FEINABSTIMMUNG TYPOGRAFIE
+   ======================================== */
+
+.left.sidebar a,
+.left.sidebar button,
+.right.sidebar a,
+.right.sidebar button,
+.explorer a,
+.explorer button,
+.toc a {
+  text-rendering: optimizeLegibility;
+}
+
+blockquote {
+  border-left: 1px solid rgba(255, 255, 255, 0.12);
+  color: #cbcbcb;
+}
+
+/* ========================================
+   OPTIONALE RUHE IM LAYOUT
+   ======================================== */
+
+hr {
+  border: none;
+  border-top: 1px solid var(--border-soft);
+}
+
+table th,
+table td {
+  border-color: rgba(255, 255, 255, 0.08);
 }

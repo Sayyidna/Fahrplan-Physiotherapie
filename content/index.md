@@ -1,6 +1,9 @@
-## [[0.1 Einleitung|Einleitung]]
+---
+title: Fahrplan Physiotherapie
+---
+## Einleitung
 
-## [[0.2 Modellstruktur|Modellstruktur]]
+## Modellstruktur
 
 ## [[0.3 Grundlagen|Grundlagen]]
 
@@ -8,10 +11,10 @@
 ## [[1.0 Befundung|Befundung]]
 ### [[1.0 Befundung#Subziele|Subziele]]
 - #### S1: Klassifikationen
-- ##### [[1.1 Anatomische Klassifikation|Anatomische Klassifikation]]
-	- S1.1: In welchen [[1.1 Anatomische Klassifikation#Neuroanatomische Segmente|neuroanatomischen Segmenten]] liegen die [[1.1 Anatomische Klassifikation#Beschwerdearten|Beschwerden]]?
-	- S1.2: Um welche [[1.1 Anatomische Klassifikation#Beschwerdearten|Beschwerdeart]] handelt es sich?
-	- S1.3: Welche anatomischen [[1.1 Anatomische Klassifikation#Gewebearten|Strukturen]] sind für die [[1.1 Anatomische Klassifikation#Beschwerdearten|Beschwerden]] verantwortlich?
+- ##### Anatomische Klassifikation
+	- [[1.1 Anatomische Klassifikation#S1.1 In welchen 1.1 Anatomische Klassifikation Neuroanatomische Segmente neuroanatomischen Segmenten liegen die 1.1 Anatomische Klassifikation Beschwerdearten Beschwerden ?|S1.1]]: In welchen [[1.1 Anatomische Klassifikation#Neuroanatomische Segmente|neuroanatomischen Segmenten]] liegen die [[1.1 Anatomische Klassifikation#Beschwerdearten|Beschwerden]]?
+	- [[1.1 Anatomische Klassifikation#S1.2 Um welche 1.1 Anatomische Klassifikation Beschwerdearten Beschwerdeart handelt es sich?|S1.2]]: Um welche [[1.1 Anatomische Klassifikation#Beschwerdearten|Beschwerdeart]] handelt es sich?
+	- [[1.1 Anatomische Klassifikation#S1.3 Welche anatomischen 1.1 Anatomische Klassifikation Gewebearten Strukturen sind für die 1.1 Anatomische Klassifikation Beschwerdearten Beschwerden verantwortlich?|S1.3]]: Welche anatomischen [[1.1 Anatomische Klassifikation#Gewebearten|Strukturen]] sind für die [[1.1 Anatomische Klassifikation#Beschwerdearten|Beschwerden]] verantwortlich?
 - ##### [[1.2 Medizinische Klassifikation|Medizinische Klassifikation]]
 	- S1.4: Wie lautet die [[1.2 Medizinische Klassifikation#Medizinische Diagnosen|medizinische Diagnose]]?
 	- S1.5: Welchen [[1.2 Medizinische Klassifikation#Diagnosekategorien|Diagnosekategorien]] entspricht dies?

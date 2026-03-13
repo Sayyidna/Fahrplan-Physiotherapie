@@ -1,4 +1,0 @@
-Bindegewebe
-Muskelgewebe
-Nervengewebe
-Epithelgewebe

@@ -1,52 +1,90 @@
 @use "./base.scss";
 
-/* ========================================
-   FAHRPLAN PHYSIOTHERAPIE – QUARTZ 4 THEME
-   ======================================== */
+/* ==========================================
+   FAHRPLAN PHYSIOTHERAPIE
+   QUARTZ 4 – OBSIDIAN-INSPIRED THEME
+   BASISVERSION
+   ========================================== */
+
+/* =========================
+   DESIGN TOKENS
+   ========================= */
 
 :root {
+  /* Farben */
+  --bg-main: #111318;
+  --bg-panel: #161920;
+  --bg-panel-2: #1a1e26;
+  --bg-hover: #20252e;
+  --bg-active: #262c36;
+  --bg-pill: #2a2f37;
+  --bg-popover: #171b22;
+
+  --text-main: #e4e7eb;
+  --text-soft: #bcc3cd;
+  --text-muted: #8f97a3;
+  --text-faint: #737b86;
+
+  --border-soft: rgba(255, 255, 255, 0.06);
+  --border-mid: rgba(255, 255, 255, 0.09);
+  --line-nav: rgba(255, 255, 255, 0.07);
+
   --accent: #a73333;
   --accent-hover: #bc4040;
 
-  --text-main: #d8d8d8;
-  --text-soft: #a8a8a8;
-  --text-muted: #878787;
-
-  --bg-main: #0f1014;
-  --bg-panel: #12141a;
-  --border-soft: rgba(255, 255, 255, 0.08);
-
+  /* Layout */
   --content-width: 820px;
-  --content-offset-left: 4.8rem;
-
-  --sidebar-left-width: 300px;
+  --sidebar-left-width: 340px;
   --sidebar-right-width: 260px;
+  --top-offset: 1rem;
 
-  --sidebar-font-size: 0.88rem;
-  --sidebar-line-height: 1.32;
-  --sidebar-letter-spacing: 0.003em;
-
+  /* Typography */
   --body-font:
-    -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", "Helvetica Neue",
-    Arial, sans-serif;
+    -apple-system, BlinkMacSystemFont, "SF Pro Text", "Inter",
+    "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --heading-font:
+    -apple-system, BlinkMacSystemFont, "SF Pro Display", "Inter",
+    "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --mono-font:
+    "SFMono-Regular", ui-monospace, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+
+  --body-size: 1.02rem;
+  --body-line: 1.72;
+
+  --sidebar-size: 0.93rem;
+  --sidebar-line: 1.35;
+
+  /* Radius / Shadow */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+
+  --shadow-soft: 0 10px 30px rgba(0, 0, 0, 0.28);
 }
 
-/* ========================================
-   GLOBAL
-   ======================================== */
+/* =========================
+   GLOBAL RESET / BASE
+   ========================= */
 
 html,
 body {
-  background: var(--bg-main);
-  color: var(--text-main);
+  background: var(--bg-main) !important;
+  color: var(--text-main) !important;
   font-family: var(--body-font);
+  font-size: var(--body-size);
+  line-height: var(--body-line);
   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
 }
 
-body {
-  line-height: 1.65;
-  font-size: 16px;
+/* Quartz nutzt teils diese Wrapper unterschiedlich */
+body,
+.page,
+.center,
+main {
+  background: var(--bg-main);
 }
 
 .page {
@@ -54,471 +92,595 @@ body {
 }
 
 .center {
-  max-width: 1320px !important;
-  min-width: 0;
+  max-width: 100% !important;
 }
 
-/* ========================================
-   CONTENT-LAYOUT
-   ======================================== */
+/* =========================
+   DREISPALTEN-LAYOUT
+   ========================= */
 
-/* Gemeinsame horizontale Achse für Breadcrumb, Titel, Meta und Content */
-.center .breadcrumb,
-.center nav.breadcrumb-container,
-.center .page-header,
-.center .content-meta,
-.center .page-meta,
-.center article,
-.center article > h1 {
-  margin-left: var(--content-offset-left) !important;
-  max-width: var(--content-width) !important;
+div.left.sidebar {
+  width: var(--sidebar-left-width) !important;
+  min-width: var(--sidebar-left-width) !important;
+  max-width: var(--sidebar-left-width) !important;
+  padding-top: var(--top-offset);
+  background: var(--bg-main);
+  border-right: 1px solid var(--border-soft);
 }
 
-/* eigentlicher Leseblock */
+div.right.sidebar {
+  width: var(--sidebar-right-width) !important;
+  min-width: var(--sidebar-right-width) !important;
+  max-width: var(--sidebar-right-width) !important;
+  padding-top: var(--top-offset);
+  background: var(--bg-main);
+  border-left: 1px solid var(--border-soft);
+}
+
 article,
 main article,
 .page article {
   max-width: var(--content-width) !important;
+  margin-left: auto !important;
   margin-right: auto !important;
-  color: var(--text-main);
+  padding-left: 2.2rem !important;
+  padding-right: 2.2rem !important;
+  padding-top: 1.1rem !important;
+  padding-bottom: 4rem !important;
 }
 
-/* Fließtext */
-article p,
-article li,
-article td,
-article blockquote,
-article span,
-article strong,
-article em {
-  color: var(--text-main);
+/* Header an Content ausrichten */
+.page-header,
+header.page-header,
+div.page-header,
+article > header {
+  max-width: var(--content-width) !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  padding-left: 2.2rem !important;
+  padding-right: 2.2rem !important;
 }
 
-/* Überschriften */
+/* =========================
+   TITEL / HEADER / BREADCRUMBS
+   ========================= */
+
+h2.page-title {
+  margin: 0 0 1rem 0 !important;
+  padding: 0.2rem 1.1rem 0.6rem 1.1rem !important;
+  font-family: var(--heading-font);
+  font-size: 1.28rem !important;
+  font-weight: 680 !important;
+  line-height: 1.2 !important;
+  letter-spacing: 0.01em;
+}
+
+h2.page-title > a {
+  color: var(--text-main) !important;
+  text-decoration: none !important;
+}
+
+h2.page-title > a:hover {
+  color: #eef1f5 !important;
+}
+
+.breadcrumbs,
+[class*="breadcrumb"] {
+  color: var(--text-faint) !important;
+  font-size: 0.8rem !important;
+  line-height: 1.35 !important;
+  margin-bottom: 1.2rem !important;
+}
+
+.breadcrumbs a,
+[class*="breadcrumb"] a {
+  color: var(--text-faint) !important;
+  text-decoration: none !important;
+}
+
+.breadcrumbs a:hover,
+[class*="breadcrumb"] a:hover {
+  color: var(--text-soft) !important;
+}
+
+/* =========================
+   TYPOGRAFIE IM CONTENT
+   ========================= */
+
+article {
+  color: var(--text-main);
+  font-family: var(--body-font);
+}
+
 article h1,
 article h2,
 article h3,
 article h4,
 article h5,
 article h6 {
-  color: #ececec !important;
-  letter-spacing: -0.012em;
-  line-height: 1.22;
+  font-family: var(--heading-font);
+  color: #e4e7eb !important;
+  letter-spacing: -0.01em;
+  line-height: 1.18;
+  font-weight: 720;
+  scroll-margin-top: 5rem;
 }
 
 article h1 {
-  font-weight: 680;
+  font-size: 2.3rem !important;
+  margin-top: 0.1rem !important;
+  margin-bottom: 1.15rem !important;
 }
 
 article h2 {
-  font-weight: 640;
+  font-size: 1.7rem !important;
+  margin-top: 2.2rem !important;
+  margin-bottom: 0.95rem !important;
 }
 
-article h3,
-article h4,
-article h5,
-article h6 {
-  font-weight: 600;
+article h3 {
+  font-size: 1.32rem !important;
+  margin-top: 1.7rem !important;
+  margin-bottom: 0.7rem !important;
 }
 
-/* Meta */
-.content-meta,
-.page-meta,
-article .meta {
-  color: var(--text-muted) !important;
+article h4 {
+  font-size: 1.08rem !important;
+  margin-top: 1.25rem !important;
+  margin-bottom: 0.45rem !important;
 }
 
-/* ========================================
-   LINKS – GLOBAL
-   ======================================== */
+article p,
+article li,
+article blockquote,
+article td,
+article th {
+  color: #e4e7eb !important;
+}
 
-a {
-  color: var(--text-soft);
+article p {
+  margin: 0 0 1.05rem 0 !important;
+}
+
+article ul,
+article ol {
+  margin-top: 0.45rem !important;
+  margin-bottom: 1.15rem !important;
+  padding-left: 1.45rem !important;
+}
+
+article li {
+  margin: 0.18rem 0 !important;
+}
+
+article strong {
+  color: #eef1f4 !important;
+  font-weight: 700;
+}
+
+article em {
+  color: #dfe3e8 !important;
+}
+
+article hr {
+  border: 0;
+  border-top: 1px solid var(--border-soft);
+  margin: 2rem 0;
+}
+
+/* =========================
+   LINKS IM CONTENT
+   ========================= */
+
+article a {
+  color: #c8ced7;
   text-decoration: none;
   transition:
-    color 140ms ease,
-    text-decoration-color 140ms ease,
-    opacity 140ms ease;
+    color 120ms ease,
+    background-color 120ms ease,
+    border-color 120ms ease;
 }
 
-a:hover {
-  color: #d0d0d0;
+article a:hover {
+  color: #eef1f5;
 }
 
-/* Interne Links im Fließtext */
+/* Interne Links – finale Fassung */
 article a.internal,
-article a.internal-link,
-article .internal-link,
-article .tag-link,
-article a[data-slug] {
-  color: #a9a9a9 !important;
+article a[data-slug],
+article a[href^="/"]:not(.external):not(.folder-title):not(.tag-link),
+article .internal-link {
   background: transparent !important;
   border: none !important;
-  box-shadow: none !important;
-  outline: none !important;
   padding: 0 !important;
+  margin: 0 !important;
+  display: inline !important;
   border-radius: 0 !important;
+  line-height: inherit !important;
+  vertical-align: baseline !important;
+  color: #9fb3c8 !important;
   text-decoration: none !important;
 }
 
 article a.internal:hover,
-article a.internal-link:hover,
-article .internal-link:hover,
-article .tag-link:hover,
-article a[data-slug]:hover {
-  color: #c7c7c7 !important;
+article a[data-slug]:hover,
+article a[href^="/"]:not(.external):not(.folder-title):not(.tag-link):hover,
+article .internal-link:hover {
+  color: #eaf2fb !important;
   text-decoration: underline !important;
-  text-underline-offset: 0.11em;
+  text-underline-offset: 0.15em;
 }
 
-/* ========================================
-   TITEL LINKS OBEN
-   DOM: h2.page-title > a
-   ======================================== */
+/* =========================
+   BLOCKQUOTE / CALLOUT / CODE
+   ========================= */
 
-h2.page-title,
-h2.page-title a,
-.page-title,
-.page-title a {
-  color: var(--accent) !important;
+article blockquote {
+  margin: 1.2rem 0 !important;
+  padding: 0.8rem 1rem !important;
+  background: rgba(255, 255, 255, 0.025);
+  border-left: 2px solid rgba(255, 255, 255, 0.12);
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+}
+
+pre,
+code,
+kbd,
+samp {
+  font-family: var(--mono-font);
+}
+
+article code {
+  background: rgba(255, 255, 255, 0.05);
+  color: #dfe4ea;
+  padding: 0.14rem 0.36rem;
+  border-radius: 6px;
+  font-size: 0.92em;
+}
+
+article pre {
+  background: #141821 !important;
+  border: 1px solid var(--border-soft);
+  border-radius: var(--radius-md);
+  padding: 1rem !important;
+  overflow-x: auto;
+  box-shadow: var(--shadow-soft);
+}
+
+/* =========================
+   TABELLEN
+   ========================= */
+
+article table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.4rem 0;
+  background: rgba(255, 255, 255, 0.015);
+  border: 1px solid var(--border-soft);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+
+article th,
+article td {
+  padding: 0.7rem 0.85rem;
+  border-bottom: 1px solid var(--border-soft);
+  text-align: left;
+  vertical-align: top;
+}
+
+article th {
+  color: #eceff3;
+  background: rgba(255, 255, 255, 0.03);
+  font-weight: 650;
+}
+
+article tr:last-child td {
+  border-bottom: none;
+}
+
+/* =========================
+   BILDER
+   ========================= */
+
+article img {
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-soft);
+  box-shadow: var(--shadow-soft);
+}
+
+/* =========================
+   SIDEBARS – ALLGEMEIN
+   ========================= */
+
+div.left.sidebar,
+div.right.sidebar {
+  font-size: var(--sidebar-size);
+  line-height: var(--sidebar-line);
+}
+
+div.left.sidebar a,
+div.right.sidebar a {
+  color: var(--text-soft);
   text-decoration: none !important;
-  font-weight: 700 !important;
-  letter-spacing: -0.015em !important;
-  line-height: 1.05 !important;
+  transition:
+    color 120ms ease,
+    background-color 120ms ease,
+    border-color 120ms ease;
 }
 
-h2.page-title a:hover,
-.page-title a:hover {
-  color: var(--accent-hover) !important;
-  text-decoration: none !important;
+div.left.sidebar a:hover,
+div.right.sidebar a:hover {
+  color: #eef1f5;
 }
 
-/* ========================================
-   BREADCRUMB
-   ======================================== */
+/* =========================
+   EXPLORER LINKS
+   ========================= */
 
-.breadcrumb,
-.breadcrumb a,
-.breadcrumb span,
-.breadcrumb p,
-.breadcrumb li,
-.breadcrumb svg,
-.breadcrumb svg *,
-nav.breadcrumb-container,
-nav.breadcrumb-container a,
-nav.breadcrumb-container span,
-nav.breadcrumb-container p,
-nav.breadcrumb-container li,
-nav.breadcrumb-container svg,
-nav.breadcrumb-container svg * {
-  color: var(--accent) !important;
-  fill: var(--accent) !important;
-  stroke: var(--accent) !important;
-  text-decoration: none !important;
+div.explorer-content {
+  padding: 0 0.7rem 1.2rem 0.7rem !important;
+  overflow-y: auto;
 }
 
-.breadcrumb a:hover,
-nav.breadcrumb-container a:hover {
-  color: var(--accent-hover) !important;
-  text-decoration: underline !important;
-  text-underline-offset: 0.12em;
+div.explorer-content ul,
+div.explorer-content ol {
+  margin: 0;
+  padding-left: 0.75rem !important;
 }
 
-.breadcrumb ol,
-.breadcrumb ul,
-nav.breadcrumb-container ol,
-nav.breadcrumb-container ul {
-  color: var(--accent) !important;
+div.explorer-content li {
+  list-style: none;
+  position: relative;
+  margin: 0;
+  padding: 0.02rem 0 0.02rem 0.08rem !important;
 }
 
-/* ========================================
-   LINKE SIDEBAR
-   ======================================== */
-
-.left.sidebar,
-div.left.sidebar {
-  width: var(--sidebar-left-width) !important;
-  min-width: var(--sidebar-left-width) !important;
-  height: 100vh !important;
-  padding-left: 18px !important;
-  padding-right: 14px !important;
-  overflow: hidden !important;
-
-  font-size: var(--sidebar-font-size) !important;
-  line-height: var(--sidebar-line-height) !important;
-  letter-spacing: var(--sidebar-letter-spacing) !important;
+/* dezente Baumlinien */
+div.explorer-content li::before {
+  content: "";
+  position: absolute;
+  left: -0.45rem;
+  top: -0.15rem;
+  bottom: -0.15rem;
+  width: 1px;
+  background: var(--line-nav);
 }
 
-/* innere Wrapper nicht scrollen lassen */
-.left.sidebar .sidebar-content,
-.left.sidebar .sidebar,
-.left.sidebar .explorer {
-  overflow: hidden !important;
-}
-
-/* Suchfeld */
-.search > button,
-.search input {
-  background: transparent !important;
-  border: 1px solid #2c2f36 !important;
-  color: #bdbdbd !important;
-  box-shadow: none !important;
-}
-
-.search input::placeholder {
-  color: #7f7f7f !important;
-}
-
-/* Explorer-Titel */
-.explorer-title,
-h2.explorer-title {
-  color: var(--text-main) !important;
-  font-weight: 600 !important;
-  letter-spacing: 0 !important;
-}
-
-/* Explorer-Grundstil */
-.explorer,
-.explorer * {
-  font-size: inherit;
-  line-height: inherit;
-}
-
-.explorer a,
-.explorer button,
-.explorer .folder-title,
-.explorer .leaf-content,
-.explorer .node-content {
+div.explorer-content a {
+  display: block;
+  padding: 0.18rem 0.45rem !important;
+  border-radius: 7px;
   color: var(--text-soft) !important;
-  background: transparent !important;
-  text-decoration: none !important;
-  font-weight: 390 !important;
-  letter-spacing: 0.002em !important;
+  font-size: 0.84rem !important;
+  line-height: 1.22 !important;
+  letter-spacing: 0.01em;
 }
 
-.explorer a:hover,
-.explorer button:hover,
-.explorer .folder-title:hover,
-.explorer .leaf-content:hover,
-.explorer .node-content:hover {
-  color: #dddddd !important;
-  text-decoration: none !important;
+div.explorer-content a:hover {
+  background: rgba(255, 255, 255, 0.045);
+  color: #eef1f5 !important;
 }
 
-/* Aktive Datei */
-.explorer a.active,
-.explorer-content a.active,
-.explorer li > a.active,
-.explorer ul li > a.active,
-.explorer [aria-current="page"] {
-  color: var(--accent) !important;
+/* aktive Datei links */
+div.explorer-content a.active,
+div.explorer-content .active > a,
+div.left.sidebar a.active {
+  background: rgba(255, 255, 255, 0.07) !important;
+  color: #f1f3f6 !important;
+}
+
+div.explorer-content a.active,
+div.left.sidebar a.active {
   font-weight: 560 !important;
 }
 
-/* Geöffnete Ordner */
-.explorer .folder-outer.open > .folder-container,
-.explorer .folder-outer.open > .folder-container *,
-.explorer .folder-outer.open > .folder-title,
-.explorer .folder-outer.open > div > a {
-  color: #d2d2d2 !important;
+/* Ordner/Section-Titel links */
+div.explorer-content button,
+div.explorer-content .folder-title,
+div.explorer-content summary {
+  color: var(--text-main) !important;
+  font-weight: 560;
 }
 
-/* Einrückung und Dichte */
-.explorer ul {
-  padding-left: 0.72rem !important;
-}
-
-.explorer li {
-  margin: 0.08rem 0 !important;
-}
-
-/* Nur Explorer-Inhalt scrollt */
-.explorer-content {
-  overflow-y: auto !important;
-  overflow-x: hidden !important;
-  max-height: calc(100vh - 220px) !important;
-  scrollbar-width: none !important;
-}
-
-.explorer-content::-webkit-scrollbar {
-  width: 0 !important;
-  height: 0 !important;
+/* Explorer-Überschrift links ausblenden */
+.left.sidebar .explorer h1,
+.left.sidebar .explorer h2,
+.left.sidebar .explorer h3,
+.left.sidebar .explorer h4,
+.left.sidebar .explorer .title,
+.left.sidebar .explorer .explorer-title {
   display: none !important;
 }
 
-.explorer-content .overflow,
-.explorer-content > ul {
-  overflow-y: visible !important;
-  overflow-x: visible !important;
+/* =========================
+   RECHTE SIDEBAR / TOC
+   ========================= */
+
+div.right.sidebar > div.toc.desktop-only,
+div.right.sidebar .toc {
+  padding: 0 0.9rem 1.2rem 0.95rem !important;
 }
 
-/* ========================================
-   RECHTE SIDEBAR / TOC
-   ======================================== */
+div.right.sidebar .toc ul,
+div.right.sidebar .toc ol {
+  margin: 0;
+  padding-left: 0.95rem;
+}
 
-.right.sidebar,
-div.right.sidebar {
-  width: var(--sidebar-right-width) !important;
-  min-width: var(--sidebar-right-width) !important;
-  height: 100vh !important;
-  padding-left: 18px !important;
-  padding-right: 10px !important;
-  overflow: hidden !important;
+div.right.sidebar .toc li {
+  list-style: none;
+  position: relative;
+  margin: 0;
+  padding: 0.04rem 0 0.04rem 0.15rem;
+}
 
-  font-size: var(--sidebar-font-size) !important;
-  line-height: var(--sidebar-line-height) !important;
-  letter-spacing: var(--sidebar-letter-spacing) !important;
+/* feine vertikale Linien wie im Outline-Baum */
+div.right.sidebar .toc li::before {
+  content: "";
+  position: absolute;
+  left: -0.42rem;
+  top: -0.14rem;
+  bottom: -0.14rem;
+  width: 1px;
+  background: var(--line-nav);
+}
+
+div.right.sidebar .toc a {
+  display: block;
+  padding: 0.24rem 0.48rem;
+  border-radius: 7px;
+  color: var(--text-soft) !important;
+  font-size: 0.89rem;
+  line-height: 1.32;
+}
+
+div.right.sidebar .toc a:hover {
+  background: rgba(255, 255, 255, 0.045);
+  color: #eef1f5 !important;
+}
+
+/* aktiver ToC-Eintrag */
+div.right.sidebar .toc a[aria-current="true"],
+div.right.sidebar .toc a.active {
+  background: rgba(255, 255, 255, 0.075) !important;
+  color: #f1f3f6 !important;
 }
 
 /* TOC-Überschrift ausblenden */
-.right.sidebar .toc > button,
-.right.sidebar .toc button,
-.right.sidebar .toc .toc-header,
+.right.sidebar .toc h1,
+.right.sidebar .toc h2,
+.right.sidebar .toc h3,
+.right.sidebar .toc h4,
+.right.sidebar .toc .title,
 .right.sidebar .toc .toc-title {
   display: none !important;
 }
 
-/* TOC allgemein */
-.right.sidebar .toc,
-.right.sidebar .toc * {
-  font-size: inherit;
-  line-height: inherit;
+/* =========================
+   META-BEREICHE / TAGS / BACKLINKS
+   ========================= */
+
+.tags,
+.tag-list,
+.backlinks,
+.related,
+footer {
+  color: var(--text-muted);
 }
 
-.right.sidebar .toc ul,
-.right.sidebar .toc li,
-.right.sidebar .toc a {
-  background: transparent !important;
-  text-decoration: none !important;
-  border: none !important;
-  box-shadow: none !important;
-}
-
-/* Fade / Mask / Overlay entfernen */
-.right.sidebar,
-.right.sidebar .toc,
-.right.sidebar .toc .overflow,
-.right.sidebar .toc ul {
-  mask-image: none !important;
-  -webkit-mask-image: none !important;
-  opacity: 1 !important;
-}
-
-.right.sidebar .toc::before,
-.right.sidebar .toc::after,
-.right.sidebar .toc .overflow::before,
-.right.sidebar .toc .overflow::after,
-.right.sidebar .toc ul::before,
-.right.sidebar .toc ul::after {
-  display: none !important;
-  content: none !important;
-}
-
-/* Alles im TOC zunächst neutral */
-.right.sidebar .toc li > a,
-.right.sidebar .toc .depth-1 > a,
-.right.sidebar .toc .depth-2 > a,
-.right.sidebar .toc .depth-3 > a,
-.right.sidebar .toc a {
+.tag-link,
+.tags a {
+  background: rgba(255, 255, 255, 0.04);
   color: var(--text-soft) !important;
-  font-weight: 390 !important;
-  letter-spacing: 0.002em !important;
+  border-radius: 999px;
+  padding: 0.16rem 0.5rem;
+  border: 1px solid var(--border-soft);
 }
 
-/* Tiefen leicht differenzieren */
-.right.sidebar .toc li.depth-1 > a {
-  font-weight: 470 !important;
+.tag-link:hover,
+.tags a:hover {
+  background: rgba(255, 255, 255, 0.075);
+  color: #eef1f5 !important;
 }
 
-.right.sidebar .toc li.depth-2 > a,
-.right.sidebar .toc li.depth-3 > a {
-  font-weight: 390 !important;
+/* =========================
+   POPUP / PREVIEW / POPOVER
+   ========================= */
+
+.popover,
+.popover-inner,
+[data-popover],
+.hover-popover,
+.transclude-preview,
+#popover,
+.tippy-box {
+  background: var(--bg-popover) !important;
+  color: var(--text-main) !important;
+  border: 1px solid var(--border-mid) !important;
+  border-radius: var(--radius-lg) !important;
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.42) !important;
 }
 
-/* Hover */
-.right.sidebar .toc a:hover {
-  color: #dddddd !important;
-  text-decoration: underline !important;
-  text-underline-offset: 0.11em;
+.popover *,
+.popover-inner *,
+[data-popover] *,
+.hover-popover *,
+.transclude-preview *,
+#popover * {
+  color: inherit;
 }
 
-/* Nur echter aktiver Link rot */
-.right.sidebar .toc a.active,
-.right.sidebar .toc a.in-view {
-  color: var(--accent) !important;
-  font-weight: 560 !important;
-}
+/* =========================
+   SCROLLBARS
+   ========================= */
 
-/* Eltern-/Containerzustände explizit neutralisieren */
-.right.sidebar .toc li.active > a:not(.active):not(.in-view),
-.right.sidebar .toc li.in-view > a:not(.active):not(.in-view),
-.right.sidebar .toc li.depth-1.active > a:not(.active):not(.in-view),
-.right.sidebar .toc li.depth-2.active > a:not(.active):not(.in-view),
-.right.sidebar .toc li.depth-3.active > a:not(.active):not(.in-view),
-.right.sidebar .toc li.depth-1 > a:not(.active):not(.in-view),
-.right.sidebar .toc li.depth-2 > a:not(.active):not(.in-view),
-.right.sidebar .toc li.depth-3 > a:not(.active):not(.in-view) {
-  color: var(--text-soft) !important;
-}
-
-/* TOC Scrollbereich */
-.right.sidebar .toc .overflow,
-.right.sidebar .toc ul {
-  overflow-y: auto !important;
-  overflow-x: hidden !important;
-  max-height: calc(100vh - 220px) !important;
+* {
   scrollbar-width: none !important;
 }
 
-.right.sidebar .toc .overflow::-webkit-scrollbar,
-.right.sidebar .toc ul::-webkit-scrollbar,
-.right.sidebar::-webkit-scrollbar {
-  width: 0 !important;
-  height: 0 !important;
+*::-webkit-scrollbar {
   display: none !important;
 }
 
-/* ========================================
-   FIREFOX SCROLLBARS AUSBLENDEN
-   ======================================== */
+/* =========================
+   SELECTION
+   ========================= */
 
-.left.sidebar,
-.right.sidebar,
-.explorer-content,
-.right.sidebar .toc ul,
-.right.sidebar .toc .overflow {
-  scrollbar-width: none !important;
+::selection {
+  background: rgba(119, 138, 176, 0.28);
+  color: #f7f8fa;
 }
 
-/* ========================================
-   FEINABSTIMMUNG TYPOGRAFIE
-   ======================================== */
+/* =========================
+   MOBILE / SCHMALERE LAYOUTS
+   ========================= */
 
-.left.sidebar a,
-.left.sidebar button,
-.right.sidebar a,
-.right.sidebar button,
-.explorer a,
-.explorer button,
-.toc a {
-  text-rendering: optimizeLegibility;
+@media (max-width: 1400px) {
+  article,
+  main article,
+  .page article {
+    padding-left: 1.6rem !important;
+    padding-right: 1.6rem !important;
+  }
+
+  div.left.sidebar {
+    width: 280px !important;
+    min-width: 280px !important;
+    max-width: 280px !important;
+  }
+
+  div.right.sidebar {
+    width: 240px !important;
+    min-width: 240px !important;
+    max-width: 240px !important;
+  }
 }
 
-blockquote {
-  border-left: 1px solid rgba(255, 255, 255, 0.12);
-  color: #cbcbcb;
+@media (max-width: 1100px) {
+  article,
+  main article,
+  .page article {
+    max-width: 760px !important;
+    padding-left: 1.2rem !important;
+    padding-right: 1.2rem !important;
+  }
+
+  article h1 {
+    font-size: 2rem !important;
+  }
+
+  article h2 {
+    font-size: 1.5rem !important;
+  }
 }
 
-/* ========================================
-   OPTIONALE RUHE IM LAYOUT
-   ======================================== */
-
-hr {
-  border: none;
-  border-top: 1px solid var(--border-soft);
-}
-
-table th,
-table td {
-  border-color: rgba(255, 255, 255, 0.08);
+@media (max-width: 800px) {
+  article,
+  main article,
+  .page article {
+    max-width: 100% !important;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
 }
